@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>iControl</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="css/images/iControl.mov"> -->
+</head>
+
+<body>
+    <div class="homepic">
+    <img src="css/images/icontrollogow.png">
+    </div>
+    <div class="form">
+            <ul class="tab-group">
+                <li class="tab active"><a href="#signup">Sign Up</a></li>
+                <li class="tab"><a href="#login">Log In</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="signup">
+                    <h1>Sign Up</h1>
+                    <form>
+                        <div class="top-row">
+                            <div class="field-wrap">
+                                <label>
+                                    First Name<span class="req">*</span>
+                                </label>
+                                <input type="text" required autocomplete="off" id="firstName" />
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    Last Name<span class="req">*</span>
+                                </label>
+                                <input type="text" required autocomplete="off" id="lastName" />
+                            </div>
+                        </div>
+                        <div class="field-wrap">
+                            <label>
+                                Email Address<span class="req">*</span>
+                            </label>
+                            <input type="email" required autocomplete="off" id="email" />
+                        </div>
+                        <div class="field-wrap">
+                            <label>
+                                Set A Password<span class="req">*</span>
+                            </label>
+                            <input type="password" required autocomplete="off" id="password" />
+                        </div>
+                        <button type="submit" class="button button-block" id="getstarted" />Get Started</button>
+                    </form>
+                </div>
+                <div id="login">
+                    <h1>Welcome Back!</h1>
+                    <form>
+                        <div class="field-wrap">
+                            <label>
+                                Email Address<span class="req">*</span>
+                            </label>
+                            <input type="email" required autocomplete="off" id="inemail" />
+                        </div>
+                        <div class="field-wrap">
+                            <label>
+                                Password<span class="req">*</span>
+                            </label>
+                            <input type="password" required autocomplete="off" id="inpassword" />
+                        </div>
+                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+                        <button class="button button-block" id="inlogin" />Log In</button>
+                    </form>
+                </div>
+            </div>
+            <!-- tab-content -->
+    </div>
+    <div class="fullscreen-bg">
+        <video loop muted autoplay class="fullscreen-bg__video">
+            <source src="css/images/iControl.mov" type="video/mp4">
+        </video>
+    <!-- /form -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+   
+</body>
+
+</html>

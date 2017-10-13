@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>iControl</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="alert alert-success alert-dismissible" role="alert">
+        Successful Check!
+    </div>
+    <div class="row">
+        <div class="col-md-3" id="botones">
+            <h4 style="color:white">Select from Menu</h4>
+            <button type="button" class="btn btn-primary btn-lg btns" id="search">Search</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg btns" id="add">Add</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg btns" id="subtract">Subtract</button>
+            <br>
+            <br>
+            <a href="/reports">
+            <button type="button" class="btn btn-primary btn-lg btns" id="reports">Report</button>
+            </a>
+            <br>
+            <br>
+            <a href="/addProducts">
+                <button type="button" class="btn btn-primary btn-lg btns" id="reports">Add Products</button>
+            </a>
+            <br>
+            <br>
+            <a href="/history">
+            <button type="button" class="btn btn-primary btn-lg btns" id="reports">History</button>
+            <br>
+            </a>
+        </div>
+        <div class="col-md-8" id="tabla">
+            <div id="tabla1">
+                <form class="form-inline">
+                    <div class="col-md-6">
+                        <h4 id="todo"></h4>
+                        <input type="text" class="form-control" id="pnumber" placeholder="Product Number">
+                        <button type="button" class="btn btn-primary" id="pnumsub">Submit</button>
+                        <br>
+                        <input type="search" class="form-control" id="barCode" placeholder="Scan Code">
+                        <input style="width:50px;" type="text" class="form-control" id="qtyop" placeholder="qty">
+                    </div>
+                    <a href="/">
+                    <img id="logopic" src="/img/icontrolpic.png" width="100" height="100">
+                    </a>
+                </form>
+                <table class="table table-striped" id="searchtable" style="overflow:auto">
+                    <thead>
+                        <th>BarCode</th>
+                        <th>Item Number</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Reorder Point</th>
+                        <th>Unit Cost</th>
+                        <th>Location</th>
+                    </thead>
+                    <tbody id="searchbody">
+                        <tr id="searchrow">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="tabla2" style="overflow:auto">
+                <table class="table table-striped" id="alltable">
+                    <thead>
+                        <th>BarCode</th>
+                        <th>Item Number</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Reorder Point</th>
+                        <th>Unit Cost</th>
+                        <th>Location</th>
+                    </thead>
+                    <tbody id="allbody">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/inventory.js"></script>
+</body>
+
+</html>
