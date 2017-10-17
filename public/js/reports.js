@@ -82,7 +82,9 @@ var myChart = new Chart(ctx, {
                     beginAtZero:true
                 }
             }]
-        }
+        },
+
+        responsive: false
     }
 });
 
@@ -161,7 +163,9 @@ var myChart = new Chart(ctx, {
                     beginAtZero:true
                 }
             }]
-        }
+        },
+
+        responsive:false
     }
 });
 
